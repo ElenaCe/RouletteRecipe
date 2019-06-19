@@ -22,7 +22,7 @@ def submiting():
     
     endpoint = "https://api.edamam.com/search"
    
-    payload = {"q":"chocolate", "app_id":rec_api_id, "app_key":rec_api_key}
+    payload = {"q":ing, "app_id":rec_api_id, "app_key":rec_api_key}
     
     response = requests.get(endpoint, params=payload)
     result=response.json()
