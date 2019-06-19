@@ -27,10 +27,17 @@ def submiting():
     response = requests.get(endpoint, params=payload)
     result=response.json()
 
-  #  jsonurl = json.result(url)
-
+    print(result)
     print(result['hits'][0]['recipe']['url'])
     rec=result['hits'][0]['recipe']['url']
-    return render_template('formpage.html', value=rec)
+    return render_template('ingpage.html', value=rec)
 
 app.run(debug=True) 
+
+
+
+
+
+
+# print(result['hits'][0]['recipe']['url'])
+ #   rec=result['hits'][0]['recipe']['url']
