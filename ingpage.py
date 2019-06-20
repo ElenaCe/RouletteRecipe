@@ -30,7 +30,8 @@ def submiting():
     print(result)
     print(result['hits'][0]['recipe']['url'])
     rec=result['hits'][0]['recipe']['url']
-    return render_template('ingpage.html', value=rec)
+    rectitle=result['hits'][0]['recipe']['label']
+    return render_template('./ingpage.html', value=[rec,rectitle])
 
 app.run(debug=True) 
 
