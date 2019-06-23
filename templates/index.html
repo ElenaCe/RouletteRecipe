@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>About</title>
+
+  <!-- ADD BOOTSTRAP CORE HERE!!!! -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/formstyles.css') }}">
+
+</head>
+
+
+  <body>
+      
+    <div class="reciperoulette">
+
+        <!--Navbar starts here-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="#">Recipe Roulette</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+          
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="{{ url_for('templates', filename='index.html') }}">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="formpage.html">Submit a recipe</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="blog.html">Blog</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="aboutus.html">About Us</a>
+                      </li>
+                    </li>
+                  </li>
+                  </ul>
+                </div>
+              </nav>
+    <!--Navbar ends here-->
+    
+    <section class="team-section text-center my-5">
+        
+    
+         <h1>Recipe Roulette</h1>
+         <p class="lead">Need a little inspiration? About to leave for vacation and need to use up what’s in the fridge?<br>Simply input your ingredients and we’ll generate you the perfect recipe!</p><br>
+           
+
+    <!--Enter the ingredient to search-->
+    <div id="contact-form" class="formstr">
+            <form method="post" action="/search" enctype="multipart/form-data">
+                <div>
+                    <label class= "ing" for="name">Ingredient:</label>
+                    <input type="name" id="ing" name="ing" required="required">
+                 </div>
+                 <div>
+                    <br>
+                    <button class="btn" type="submit" value="Submit" id="submitbutton">Submit your recipe</button>
+                </div>
+            </form>
+    </div>
+    <!--Elena end-->
+
+       <div class="submitarecipe">
+     
+         <h1>Submit a Recipe</h1><p class="lead">Have a recipe of your own? Head over to our submit recipe page and we’ll feature it on our website.</p>
+         Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. Recipe thing goes here. v
+       
+       </section>
+</div>
+  </body>
+</html>

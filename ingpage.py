@@ -8,7 +8,7 @@ app = Flask("MyApp")
 @app.route("/")
 def open_page():
     #render_template() to tell Flask what HTML page to display
-    return render_template("ingpage.html")
+    return render_template("index.html")
 
 @app.route("/search", methods=["POST"])
 def submiting():

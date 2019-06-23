@@ -1,0 +1,36 @@
+.reciperoulette {
+    background: url(../images/piebackground.jpg);
+  }
+  
+  h1 {
+    color: #FFFFFF;
+    font-size: 100px;
+  }
+  
+  .lead {
+    color: #FFFFFF;
+    font-size: 20px;
+  }
+  
+  .submitarecipe {
+    background: url(../images/eggbackground.jpg);
+  }
+  
+  .aboutusbackground {
+    background-color: #E0E0E0
+  }
+  
+  .navbar {
+      background-size: cover;
+  }
+  
+  .starter-template {
+      padding: 3rem 1.5rem;
+      text-align: center;
+      background: url(../images/headercupcake.jpeg);
+      background-size: 100%;
+    }
+    
+    div.row {
+      text-align: center;
+    }
