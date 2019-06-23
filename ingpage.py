@@ -27,18 +27,17 @@ def submiting():
     response = requests.get(endpoint, params=payload)
     result=response.json()
 
-    print(result)
-    print(result['hits'][0]['recipe']['url'])
+#Recipe elements from API
+    #Recipe url (url)
     rec=result['hits'][0]['recipe']['url']
+    #Recipe title (label)
     rectitle=result['hits'][0]['recipe']['label']
-    return render_template('./ingpage.html', value=[rec,rectitle])
+    #Recipe image URL (image)
+    recimage=result['hits'][0]['recipe']['image']   
+
+    rec2=result['hits'][1]['recipe']['url']
+    rectitle2=result['hits'][1]['recipe']['label']
+    recimage2=result['hits'][1]['recipe']['image']
+    return render_template('./ingpage.html',value=[rec,rectitle,recimage,rec2,rectitle2,recimage2])
 
 app.run(debug=True) 
-
-
-
-
-
-
-# print(result['hits'][0]['recipe']['url'])
- #   rec=result['hits'][0]['recipe']['url']
