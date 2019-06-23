@@ -9,7 +9,7 @@
 }
 
 .carousel-container {
-    width: 80%;
+    width: 8git 0%;
     margin: auto;
 }
 
@@ -29,7 +29,7 @@ img {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 52%;
+  top: 55%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
@@ -56,7 +56,7 @@ img {
   font-size: 16px;
   padding: 8px 12px;
   position: absolute;
-  top: 15%;
+  top: 20%;
 }
 
 .caption {
