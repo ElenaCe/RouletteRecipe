@@ -35,9 +35,11 @@ def submiting():
     #Recipe image URL (image)
     recimage=result['hits'][0]['recipe']['image']   
 
-    rec2=result['hits'][1]['recipe']['url']
-    rectitle2=result['hits'][1]['recipe']['label']
-    recimage2=result['hits'][1]['recipe']['image']
-    return render_template('./ingpage.html',value=[rec,rectitle,recimage,rec2,rectitle2,recimage2])
+    rec1=result['hits'][1]['recipe']['url']
+    rectitle1=result['hits'][1]['recipe']['label']
+    recimage1=result['hits'][1]['recipe']['image']
+  
+
+    return render_template('./recipe.html',recurl=rec,rectitle=rectitle,recimage=recimage,recurl1=rec1,rectitle1=rectitle1,recimage1=recimage1)
 
 app.run(debug=True) 

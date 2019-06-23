@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Recipe Roulette</title>
-		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
@@ -23,12 +23,12 @@
         <!-- large scale images -->
         <div class=box-container>   
 			<div class="box">1/8</div>
-				<img class="large" src="images/img1.jpg" alt="cakes"/>
+				<a href="{{recurl}}"><img class="large" src="{{recimage}}" alt="cakes"/></a>
 		</div>
         
         <div class=box-container>   
 			<div class="box">2/8</div>
-				<img class="large" src="images/img2.jpg" alt="cakes"/>
+				<img class="large" src="./images/img2.jpg" alt="cakes"/>
 		</div>
         
         <div class=box-container>
@@ -73,7 +73,7 @@
 		<!-- thumbnail images -->
 		<div class="row">
            <div class="column">
-				<img class="cursor thumbnail" src="images/img1.jpg" onclick="currentSlide(1)" alt="Recipe Name">
+				<img class="cursor thumbnail" src="{{recimage}}" onclick="currentSlide(1)" alt="{{rectitle}}">
 			</div>
 			 <div class="column">
 				<img class="cursor thumbnail" src="images/img2.jpg" onclick="curretSlide(2)" alt="Recipe Name">
@@ -82,7 +82,6 @@
 				<img class="cursor thumbnail" src="images/img3.jpg" onclick="currentSlide(3)" alt="Recipe Name">
 			</div>
 			 <div class="column">
-				<img class="thumbnail" src="images/img4.jpg" onclick="currentSlide(4)" alt="Recipe Name">
 			</div>
 			 <div class="column">
 				<img class="cursor thumbnail" src="images/img5.jpg" onclick="currentSlide(5)" alt="Recipe Name">
@@ -98,7 +97,7 @@
 			</div>
 		</div>
 	</div>
-
-		<script src="carousel.js"></script>
+	
+		<script src="{{ url_for('static', filename='js/carousel.js') }}"></script>
 	</body>
 </html>
