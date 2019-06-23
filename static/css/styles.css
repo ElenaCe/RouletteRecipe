@@ -86,7 +86,7 @@ img {
 /*adjust width size based on the total number of images*/
 .column {
   float: left;
-  width: 12.5%;
+  width: 25%;
 }
 
 

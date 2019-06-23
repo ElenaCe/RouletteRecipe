@@ -1,103 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Recipe Roulette</title>
-		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<body>
-		<header>
-			<img src="" alt=""/>
-			<nav id="primarynav">
-				<ul id="navbar">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Submit Recipes</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">About Us</a></li>
-			    </ul>
-		    </nav>
-			<h1>Recipes</h1>
-		</header>
-	<div class="carousel-container">	
+    <head>
+        <meta charset="UTF-8">
+        <title>Recipe Roulette</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <img src="" alt=""/>
+            <nav id="primarynav">
+                <ul id="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Submit Recipes</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+            <h1>Recipes</h1>
+        </header>
+    <div class="carousel-container">    
         <!-- large scale images -->
         <div class=box-container>   
-			<div class="box">1/8</div>
-				<a href="{{recurl}}"><img class="large" src="{{recimage}}" alt="cakes"/></a>
-		</div>
+            <div class="box">1/8</div>
+                <a href="{{recurl}}"><img class="large" src="{{recimage}}" alt="cakes"/></a>
+        </div>
         
         <div class=box-container>   
-			<div class="box">2/8</div>
-			<a href="{{recurl1}}"><img class="large" src="{{recimage1}}" alt="cakes"/></a>
-		</div>
+            <div class="box">1/8</div>
+                <a href="{{recurl1}}"><img class="large" src="{{recimage1}}" alt="cakes"/></a>
+        </div>
         
         <div class=box-container>
-			<div class="box">3/8</div>
-			<a href="{{recurl2}}"><img class="large" src="{{recimage2}}" alt="cakes"/></a>
-		</div>
+            <div class="box">3/8</div>
+            <a href="{{recurl2}}"><img class="large" src="{{recimage2}}" alt="cakes"/></a>
+        </div>
 
-		<div class=box-container>
-			<div class="box">4/8</div>
-				<img class="large" src="images/img4.jpg" alt="cakes"/>
-		</div>
+        <div class=box-container>
+            <div class="box">3/8</div>
+            <a href="{{recurl3}}"><img class="large" src="{{recimage3}}" alt="cakes"/></a>
+        </div>
 
-		<div class=box-container>
-			<div class="box">5/8</div>
-				<img class="large" src="images/img5.jpg" alt="cakes"/>
-		</div>
-
-		<div class=box-container>
-			<div class="box">6/8</div>
-				<img class="large" src="images/img6.jpg" alt="cakes"/>
-		</div>
-
-		<div class=box-container>
-			<div class="box">7/8</div>
-				<img class="large" src="images/img7.jpg" alt="cakes"/>
-		</div>
-
-		<div class=box-container>
-			<div class="box">8/8</div>
-				<img class="large" src="images/img8.jpg" alt="cakes"/>
-		</div>	
         
         <!-- buttons -->
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-		<!-- image text -->
-		<div class ="caption">
-			<p id="caption-text"></p>
-		</div>
+        <!-- image text -->
+        <div class ="caption">
+            <p id="caption-text"></p>
+        </div>
 
-		<!-- thumbnail images -->
-		<div class="row">
+        <!-- thumbnail images -->
+        <div class="row">
            <div class="column">
-				<img class="cursor thumbnail" src="{{recimage}}" onclick="currentSlide(1)" alt="{{rectitle}}">
-			</div>
-			 <div class="column">
-				<img class="cursor thumbnail" src="{{recimage1}}" onclick="curretSlide(2)" alt="{{rectitle1}}">
-			</div>
-			 <div class="column">
-				<img class="cursor thumbnail" src="{{recimage2}}" onclick="currentSlide(3)" alt="{{rectitle2}}">
-			</div>
-			 <div class="column">
-			</div>
-			 <div class="column">
-				<img class="cursor thumbnail" src="images/img5.jpg" onclick="currentSlide(5)" alt="Recipe Name">
-			</div>
-			 <div class="column">
-				<img class="cursor thumbnail" src="images/img6.jpg" onclick="currentSlide(6)" alt="Recipe Name">
-			</div>
-			 <div class="column">
-				<img class="cursor thumbnail" src="images/img7.jpg" onclick="currentSlide(7)" alt="Recipe Name">
-			</div>
-			 <div class="column">
-				<img class="cursor thumbnail" src="images/img8.jpg" onclick="currentSlide(8)" alt="Recipe Name">
-			</div>
-		</div>
-	</div>
-	
-		<script src="{{ url_for('static', filename='js/carousel.js') }}"></script>
-	</body>
-</html>
+                <img class="cursor thumbnail" src="{{recimage}}" onclick="currentSlide(1)" alt="{{rectitle}}">
+            </div>
+            <div class="column">
+                <img class="cursor thumbnail" src="{{recimage1}}" onclick="currentSlide(2)" alt="{{rectitle1}}">
+            </div>
+             <div class="column">
+                <img class="cursor thumbnail" src="{{recimage2}}" onclick="currentSlide(3)" alt="{{rectitle2}}">
+            </div>
+            <div class="column">
+                <img class="cursor thumbnail" src="{{recimage3}}" onclick="currentSlide(4)" alt="{{rectitle3}}">
+            </div>
+        </div>
+    </div>
+    
+        <script src="{{ url_for('static', filename='js/carousel.js') }}"></script>
+    </body>
+</html> 
