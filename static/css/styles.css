@@ -9,8 +9,15 @@
 }
 
 .carousel-container {
-    width: 80%;
+    width: 60%;
     margin: auto;
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background: url(../images/headercupcake.jpeg);
+  background-size: 100%;
 }
 
 .carousel {

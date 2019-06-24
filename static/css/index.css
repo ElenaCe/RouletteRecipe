@@ -14,8 +14,8 @@
   
   .submitarecipe {
     background: url(../images/eggbackground.jpg);
-  }
-  
+  } 
+
   .aboutusbackground {
     background-color: #E0E0E0
   }
@@ -29,7 +29,7 @@
       text-align: center;
       background: url(../images/headercupcake.jpeg);
       background-size: 100%;
-    }
+    } 
     
     div.row {
       text-align: center;
