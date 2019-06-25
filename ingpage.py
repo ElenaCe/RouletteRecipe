@@ -88,5 +88,3 @@ def submiting():
   
 
     return render_template('./recipe.html',recurl=rec,rectitle=rectitle,recimage=recimage,recurl1=rec1,rectitle1=rectitle1,recimage1=recimage1,recurl2=rec2,rectitle2=rectitle2,recimage2=recimage2)
-
-app.run(debug=True) 
