@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/formstyles.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 
 </head>
 
@@ -37,7 +38,7 @@
                       <a class="nav-link" href="/formpage">Submit a recipe</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="/blog">Blog</a>
+                        <a class="nav-link" href="#">Blog</a>
                     <li class="nav-item">
                       <a class="nav-link" href="/aboutus">About Us</a>
                       </li>
@@ -50,8 +51,9 @@
     
     <section class="team-section text-center my-5">
         
-    
+        <br><br><br>
          <h1>Recipe Roulette</h1>
+         <br><br>
          <p class="lead">Need a little inspiration? About to leave for vacation and need to use up what’s in the fridge?<br>Simply input your ingredients and we’ll generate you the perfect recipe!</p><br>
            
 
@@ -59,16 +61,19 @@
     <div id="contact-form" class="formstr">
             <form method="post" action="/search" enctype="multipart/form-data">
                 <div>
+                    <br><br>
                     <label class= "ing" for="name">Ingredient:</label>
                     <input type="name" id="ing" name="ing" required="required">
                  </div>
                  <div>
-                    <br>
+                    <br><br><br>
                     <button class="btn" type="submit" value="Submit" id="submitbutton">Submit your recipe</button>
                 </div>
             </form>
-            <div>
-              <h3>Submit a Recipe</h3><p class="lead">Have a recipe of your own? Head over to our submit recipe page and we’ll feature it on our website.</p>
+            <div><br><br><br><br><br>
+              <h3>Enjoy!</h3><p class="lead"></p>
+              <br><br>
+
 
               
             </div>

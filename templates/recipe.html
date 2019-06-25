@@ -1,73 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>Recipe Roulette</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="description" content="">
+            <meta name="author" content="">
+          
+            <title>Recipe Roulette</title>
+          
+            <!-- ADD BOOTSTRAP CORE HERE!!!! -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/formstyles.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
     </head>
     <body>
-        <header>
-            <img src="" alt=""/>
-            <nav id="primarynav">
-                <ul id="navbar">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Submit Recipes</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>
-            </nav>
-            <h1>Recipes</h1>
-        </header>
-    <div class="carousel-container" class="starter-template">    
-        <!-- large scale images -->
-        <div class=box-container>   
-            <div class="box">1/8</div>
-                <a href="{{recurl}}"><img class="large" src="{{recimage}}" alt="cakes"/></a>
-        </div>
-        
-        <div class=box-container>   
-            <div class="box">1/8</div>
-                <a href="{{recurl1}}"><img class="large" src="{{recimage1}}" alt="cakes"/></a>
-        </div>
-        
-        <div class=box-container>
-            <div class="box">3/8</div>
-            <a href="{{recurl2}}"><img class="large" src="{{recimage2}}" alt="cakes"/></a>
-        </div>
-
-        <div class=box-container>
-            <div class="box">3/8</div>
-            <a href="{{recurl3}}"><img class="large" src="{{recimage3}}" alt="cakes"/></a>
-        </div>
-
-        
-        <!-- buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <!-- image text -->
-        <div class ="caption">
-            <p id="caption-text"></p>
-        </div>
-
-        <!-- thumbnail images -->
-        <div class="row">
-           <div class="column">
-                <img class="cursor thumbnail" src="{{recimage}}" onclick="currentSlide(1)" alt="{{rectitle}}">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="#">Recipe Roulette</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+          
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/formpage">Submit a recipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/aboutus">About Us</a>
+                      </li>
+                    </li>
+                  </li>
+                  </ul>
+            </div> 
+        </nav>
+    <!--Navbar ends here-->
+    <br><br><br>
+    <main>
+      <div class="carousel-container">    
+      <!-- large scale images -->
+            <div class="box-container">   
+                  <div class="box-position">1/8</div>
+                  <a href="{{recurl}}"><img class="large" src="{{recimage}}" alt="cakes"/></a>
             </div>
-            <div class="column">
-                <img class="cursor thumbnail" src="{{recimage1}}" onclick="currentSlide(2)" alt="{{rectitle1}}">
+
+            <div class="box-container">   
+                  <div class="box-position">1/8</div>
+                  <a href="{{recurl1}}"><img class="large" src="{{recimage1}}" alt="cakes"/></a>
             </div>
-             <div class="column">
-                <img class="cursor thumbnail" src="{{recimage2}}" onclick="currentSlide(3)" alt="{{rectitle2}}">
+
+            <div class="box-container">
+                  <div class="box-position">3/8</div>
+                  <a href="{{recurl2}}"><img class="large" src="{{recimage2}}" alt="cakes"/></a>
             </div>
-            <div class="column">
-                <img class="cursor thumbnail" src="{{recimage3}}" onclick="currentSlide(4)" alt="{{rectitle3}}">
+
+
+                  <!-- buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                  <!-- image text -->
+            <div class ="caption">
+                  <p id="caption-text"></p>
             </div>
-        </div>
-    </div>
-    
+
+                  <!-- thumbnail images -->
+            <div class="thumb-row">
+                  <div class="column">
+                        <img class="cursor thumbnail" src="{{recimage}}" onclick="currentSlide(1)" alt="{{rectitle}}">
+                  </div>
+                  <div class="column">
+                      <img class="cursor thumbnail" src="{{recimage1}}" onclick="currentSlide(2)" alt="{{rectitle1}}">
+                  </div>
+                  <div class="column">
+                      <img class="cursor thumbnail" src="{{recimage2}}" onclick="currentSlide(3)" alt="{{rectitle2}}">
+                  </div>
+            </div>
+      </div>
+      </main>
+  
+
         <script src="{{ url_for('static', filename='js/carousel.js') }}"></script>
     </body>
 </html> 

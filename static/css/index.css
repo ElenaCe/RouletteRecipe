@@ -3,6 +3,7 @@
   }
   
   h1 {
+    font-family: inherit !important;
     color: #FFFFFF;
     font-size: 100px;
   }
@@ -10,11 +11,9 @@
   .lead {
     color: #FFFFFF;
     font-size: 20px;
+    font-weight: bold !important;
   }
-  
-  .submitarecipe {
-    background: url(../images/eggbackground.jpg);
-  } 
+
 
   .aboutusbackground {
     background-color: #E0E0E0
@@ -34,3 +33,5 @@
     div.row {
       text-align: center;
     }
+
+    
